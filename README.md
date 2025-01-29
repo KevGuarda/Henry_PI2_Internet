@@ -8,6 +8,21 @@ Este proyecto tiene como objetivo analizar los datos de acceso y velocidad del s
 
 Los datos utilizados en este análisis provienen de diversas fuentes, como lo son ENACOM, Cámara Argentina de Internet y Banco Central de la República Argentina. Los datos se procesaron y limpiaron utilizando Python, y se exportaron a archivos CSV para su uso en Power BI.
 
+## Tecnologías utilizadas
+El proyecto involucró el uso de Pyhton y Pandas para la manipulación de datos, mientras que la visualización de resultados fue realizada en un Dashboard interactivo desarrollado en Power BI.
+
+La librerías empleadas fueron las siguientes:
+
+- Pandas
+
+- Camelot
+
+- Seaborn
+
+- Matplotlib
+
+- Warnings
+
 ## Estructura del Proyecto
 
 ```bash
@@ -68,10 +83,13 @@ Henry_PI2_Internet/
 ## Funcionalidad de los KPI
 
 1. **KPI incremento trimestral 2% de Accesos**:
-    - Este KPI evalúa si se cumple con el incremento del 2% en Accesos por cada 100 hogares de un trimestre a otro.
+    - Este KPI evalúa si se cumple con el incremento del 2% en Accesos por cada 100 hogares de un trimestre a otro. Su fórmula es la siguiente:
+      $`KPI = ((Nuevo acceso - Acceso actual) / Acceso actual) * 100`$
 
 2. **KPI incremento trimestral del 3% de velocidad media**:
-    - Este KPI evalúa si durante el trimestre se cumple con el objetivo de incrementar en 3% la velocidad media de bajada.
+    - Este KPI evalúa si durante el trimestre se cumple con el objetivo de incrementar en 3% la velocidad media de bajada. Su fórmula es la siguiente:
+      $`KPI = ((Velocidad Media Período Actual - Velocidad Media Período Anterior) / Velocidad Media Período Anterior) * 100`$
 
 3. **KPI incremento del 5% de Ingreso por Acceso**:
-    - Este KPI evalúa si durante el trimestre se presenta un incremento del 5% por cada acceso nuevo.
+    - Este KPI evalúa si durante el trimestre se presenta un incremento del 5% por cada acceso nuevo. Su fórmula es la siguiente:
+      $`KPI = ((Nuevo Ingreso por acceso - Ingreso por cceso actual) / Ingreso por acceso actual) * 100`$
